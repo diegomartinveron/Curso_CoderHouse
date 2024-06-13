@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.nav {
+    background-color: pink;
+    padding: 1rem;
+    /* aca uso el flex para utilizar la imagen del perrito */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perrito{
+    width: 4rem;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    /* ATENCIÓN: 
+    display: ;estas ppropiedades funciones tiene que tener el flex activo */
+    flex-wrap: nowrap;
+    /* flex-direction: PUEDE DAR EN FORMA VERTICAL (column) O HORIZONTAL (row); */
+    /* esto deja de funcionar cuando utilizamos el flex en el padre en este caso nav */
+    /* justify-content: space-between;
+    align-items: center; */
+    gap: 1em;
+}
+
+.menu-item {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.nosotros {
+    /* puedo poner otro display: para el contenido de class */
+    height: 2rem;
+    display: flex;
+    align-items: end;
+}
+.inicio{
+    order: 1;
+}
+.nosotros{
+    order: 0;
+}
+.servicios{
+    order: 1;
+}
+.clientes{
+    order: 1;
+}
+.contactos{
+    order: 3;
+}
